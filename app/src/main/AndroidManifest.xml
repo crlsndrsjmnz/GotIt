@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2015 Carlos Andres Jimenez <apps@carlosandresjimenez.co>
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.carlosandresjimenez.android.gotit"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!--Use Network to call cloud service-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--Network validation permission-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--Google Sign in permissions-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!--Notification permissions-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Main">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".AccountDetailsActivity"
+            android:label="@string/title_activity_account_details"
+            android:parentActivityName=".SettingsActivity"
+            android:theme="@style/AppTheme.Settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name=".AccountPrivacyActivity"
+            android:label="@string/title_activity_account_privacy"
+            android:parentActivityName=".SettingsActivity"
+            android:theme="@style/AppTheme.Settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name=".DataFeedActivity"
+            android:label="@string/title_activity_datafeed"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FollowingActivity"
+            android:label="@string/title_activity_following"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CheckInListActivity"
+            android:label="@string/title_activity_checkin"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CheckinDetailsActivity"
+            android:label="@string/title_activity_checkin_details"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FeedbackGraphActivity"
+            android:label="@string/title_activity_feedback"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="@string/title_activity_user_details"
+            android:parentActivityName=".FollowingActivity"
+            android:theme="@style/AppTheme.Other">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.carlosandresjimenez.android.gotit.FollowingActivity" />
+        </activity>
+
+        <service
+            android:name="co.carlosandresjimenez.android.gotit.cloud.UserIntentService"
+            android:process=":userService" />
+
+        <service
+            android:name="co.carlosandresjimenez.android.gotit.cloud.QuestionIntentService"
+            android:process=":questionService" />
+
+        <service
+            android:name="co.carlosandresjimenez.android.gotit.cloud.AnswerIntentService"
+            android:process=":answerService" />
+
+        <service
+            android:name="co.carlosandresjimenez.android.gotit.cloud.CheckinIntentService"
+            android:process=":checkinService" />
+
+        <service
+            android:name="co.carlosandresjimenez.android.gotit.cloud.FollowingIntentService"
+            android:process=":followingService" />
+
+        <receiver android:name=".notification.AlarmReceiver" />
+
+        <receiver
+            android:name=".notification.BootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

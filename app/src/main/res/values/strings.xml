@@ -1,0 +1,191 @@
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2015 Carlos Andres Jimenez <apps@carlosandresjimenez.co>
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Got It</string>
+
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+
+    <!-- Rationale for asking for Contacts -->
+    <string name="contacts_permission_rationale">Contacts access is needed in order to retrieve your email address.</string>
+
+    <string name="dialog_follow_request">Please enter the email address of the person you would like to follow, this person will be notified.</string>
+
+    <string name="dialog_signout_confirmation">Do you really want to Sign Out?</string>
+    <string name="dialog_follow_accept">Do you also want to follow back user <xliff:g id="hours">%1$s</xliff:g>?</string>
+    <string name="dialog_follow_reject">Are you sure you want to reject user <xliff:g id="hours">%1$s</xliff:g>?. You will not be notified again.</string>
+
+    <string name="progressdialog_follow_accept">Accepting user...</string>
+    <string name="progressdialog_follow_reject">Rejecting user...</string>
+    <string name="progressdialog_saving">Saving...</string>
+    <string name="progressdialog_loading">Loading...</string>
+
+    <string name="notification_title">Check-in notification</string>
+    <string name="notification_text">It\'s time to do your Got It Check-in.</string>
+
+    <string name="pref_connection_autologin_key">autologin</string>
+
+    <string name="error_service_unavailable">Service unavailable.</string>
+    <string name="error_network_unavailable">Network unavailable.</string>
+    <string name="error_unknown">Unknown error.</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_account_details">Account Details</string>
+    <string name="title_activity_account_privacy">Account Privacy</string>
+    <string name="title_activity_datafeed">Feed</string>
+    <string name="title_activity_registration">Register</string>
+    <string name="title_activity_user_details">User Details</string>
+    <string name="title_activity_following">Following</string>
+    <string name="title_activity_checkin">Check-in</string>
+    <string name="title_activity_feedback">Feedback graph</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_checkin_details">Check-in details</string>
+
+    <string name="title_dialog_follow">Follow</string>
+    <string name="title_dialog_checkin">Check-in</string>
+
+    <string name="action_feedback">Feedback graph</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="action_share">Share</string>
+
+    <string name="action_ok">Ok</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_next">Next</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="action_request">Request</string>
+
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+
+    <string name="drawer_header_username">John Doe</string>
+    <string name="drawer_header_email">john@gmail.com</string>
+
+    <string name="drawer_item_feed">Feed</string>
+    <string name="drawer_item_following">Following</string>
+    <string name="drawer_item_checkin">Check-in</string>
+    <string name="drawer_item_graph">Graph</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_about">About</string>
+
+    <string name="pref_notification_category_key" translatable="false">notification_category</string>
+    <string name="pref_notification_category_label" translatable="true">Notifications</string>
+
+    <string name="pref_notifications_key" translatable="false">notifications</string>
+    <string name="pref_notifications_label" translatable="true">Notifications</string>
+    <string name="pref_notifications_on" translatable="true">Enabled</string>
+    <string name="pref_notifications_off" translatable="true">Not Enabled</string>
+    <string name="pref_notifications_default" translatable="false">true</string>
+
+    <string name="pref_account_stored_key">account_stored</string>
+    <string name="pref_account_modified_key">account_modified</string>
+
+    <string name="pref_account_category_key" translatable="false">account_category</string>
+    <string name="pref_account_category_label" translatable="true">Account</string>
+
+    <string name="pref_account_details_key" translatable="true">account_details</string>
+    <string name="pref_account_details_label" translatable="true">Account Details</string>
+
+    <string name="pref_account_privacy_key" translatable="true">privacy_settings</string>
+    <string name="pref_account_privacy_label" translatable="true">Privacy Settings</string>
+
+    <string name="pref_account_userid_key" translatable="false">userid</string>
+
+    <string name="pref_account_email_key" translatable="false">email</string>
+    <string name="pref_account_email_label" translatable="true">Email</string>
+
+    <string name="pref_account_avatar_key" translatable="false">avatar</string>
+    <string name="pref_account_avatar_label" translatable="true">Avatar</string>
+
+    <string name="pref_account_firstname_key" translatable="false">first_name</string>
+    <string name="pref_account_firstname_label" translatable="true">First name</string>
+
+    <string name="pref_account_lastname_key" translatable="false">last_name</string>
+    <string name="pref_account_lastname_label" translatable="true">Last name</string>
+
+    <string name="pref_account_birthdate_key" translatable="false">birthdate</string>
+    <string name="pref_account_birthdate_label" translatable="true">Date of birth</string>
+
+    <string name="pref_account_telephone_key" translatable="false">telephone</string>
+    <string name="pref_account_telephone_label" translatable="true">Telephone number</string>
+
+    <string name="pref_account_medical_key" translatable="false">medical</string>
+    <string name="pref_account_medical_label" translatable="true">Medical record number</string>
+
+    <string name="pref_signout_key" translatable="true">signout</string>
+    <string name="pref_signout_label" translatable="true">Sign Out</string>
+
+    <string name="pref_frequency_label">Notification frequency</string>
+    <string name="pref_frequency_label_24">Every day</string>
+    <string name="pref_frequency_label_12">Every 12 hours</string>
+    <string name="pref_frequency_label_8">Every 8 hours</string>
+    <string name="pref_frequency_label_6">Every 6 hours</string>
+    <string name="pref_frequency_key" translatable="false">frequency</string>
+    <string name="pref_frequency_24" translatable="false">24</string>
+    <string name="pref_frequency_12" translatable="false">12</string>
+    <string name="pref_frequency_8" translatable="false">8</string>
+    <string name="pref_frequency_6" translatable="false">6</string>
+
+    <string name="user_type_label" translatable="false">User Type</string>
+    <string name="user_type_key" translatable="false">user_type</string>
+
+    <string name="user_type_patient" translatable="false">P</string>
+    <string name="user_type_patient_label" translatable="true">Patient</string>
+
+    <string name="user_type_follower" translatable="false">F</string>
+    <string name="user_type_follower_label" translatable="true">Follower</string>
+
+    <string name="pref_privacy_medical_key" translatable="false">privacy_medical</string>
+    <string name="pref_privacy_medical_label" translatable="true">Share medical number</string>
+    <string name="pref_privacy_medical_default" translatable="false">false</string>
+
+    <string name="pref_privacy_birthdate_key" translatable="false">privacy_birthdate</string>
+    <string name="pref_privacy_birthdate_label" translatable="true">Share date of birth</string>
+    <string name="pref_privacy_birthdate_default" translatable="false">false</string>
+
+    <string name="pref_privacy_avatar_key" translatable="false">privacy_avatar</string>
+    <string name="pref_privacy_avatar_label" translatable="true">Share profile image</string>
+    <string name="pref_privacy_avatar_default" translatable="false">true</string>
+
+    <string name="pref_privacy_feedback_key" translatable="false">privacy_feedback</string>
+    <string name="pref_privacy_feedback_label" translatable="true">Share feedback graph</string>
+    <string name="pref_privacy_feedback_default" translatable="false">true</string>
+
+    <string name="pref_privacy_on" translatable="true">Shared</string>
+    <string name="pref_privacy_off" translatable="true">Not shared</string>
+
+    <string name="time_format"><xliff:g id="hours">%1$d</xliff:g>:<xliff:g id="minutes">%2$02d</xliff:g></string>
+    <string name="date_format"><xliff:g id="year">%1$04d</xliff:g>/<xliff:g id="month">%2$02d</xliff:g>/<xliff:g id="day">%3$02d</xliff:g></string>
+
+    <string name="about_line1" translatable="true">Got It, v1.0</string>
+    <string name="about_line2" translatable="true">Carlos Andrés Jiménez</string>
+    <string name="about_line3" translatable="true">apps@carlosandresjimenez.co</string>
+    <string name="about_line4" translatable="true">2015</string>
+</resources>
